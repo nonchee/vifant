@@ -1,0 +1,362 @@
+<html>
+
+<head>
+
+	<title> Vifant </title>
+
+  <link rel="icon" href="favicon.ico" />
+
+
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+
+
+<style>
+
+body {
+	position: relative;  /*sllows scrollspy to work*/
+	font-size: 1.8rem; 
+	font-family: "Tw Cen MT";
+}
+
+
+#logo {
+	margin-top: 5%; 
+	height:20%; /* height will change with responsive design */
+	text-align: center;
+
+}
+
+#logo img {
+	position: relative; 
+	display: inline-block; 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.navbar {
+	margin-top: 5%; 
+	text-align: center;
+	background-color: white;
+	border-style: none !important;
+}
+
+
+.navbar-header {
+	position: relative;
+	display: inline-block !important;
+	float: none;
+}
+
+
+
+
+
+/* having nav change as scroll */
+.nav .active {
+  font-weight: bold;
+  background: #72bcd4;
+}
+ 
+.nav .nav {
+  display: none;
+}
+ 
+.nav .active .nav {
+  display: block;
+}
+ 
+.nav .nav a {
+  font-weight: normal;
+  font-size: .85em;
+}
+ 
+.nav .nav span {
+  margin: 0 5px 0 2px;
+}
+ 
+.nav .nav .active a,
+.nav .nav .active:hover a,
+.nav .nav .active:focus a {
+  font-weight: bold;
+  padding-left: 30px;
+  border-left: 5px solid black;
+}
+ 
+.nav .nav .active span,
+.nav .nav .active:hover span,
+.nav .nav .active:focus span {
+  display: none;
+}
+
+/*having nav change as scroll ^^^ */
+.affix {
+  top: 0px;
+  width: 100%;
+  /*affix things have relative positions*/
+  background-color: white; 
+  z-index: 100;
+  left: 0;
+  right: auto;
+  text-align: center;
+}
+
+
+
+.container-fluid {
+	padding: 15%;
+	padding-top: 0;  
+}
+
+.section {
+	margin-top: 8%; 
+}
+
+
+#footer {
+
+	background-color: #6EBDBD;
+	color: white;
+}
+
+#footer h3 { 
+ margin-top: 15%;
+ }
+#copyright {
+	margin-top: 25%; 
+}
+
+#footer a { 
+	color: white;
+  border-bottom: 1px solid #72bcd4;
+  transition: border-bottom 300ms;
+}
+
+#footer a:hover {
+	text-decoration:none;
+	border-bottom: 1px solid white;
+  transition: border-bottom 300ms;
+	color: white;
+}
+
+
+not(#footer) a { 
+  color: black;
+    font-style: bold;
+  border-bottom: 1px solid #72bcd4;
+  transition: border-bottom 300ms;
+}
+
+not(#footer) a:hover {
+  text-decoration:none;
+  font-style: bold;
+  border-bottom: 1px solid black;
+  transition: border-bottom 300ms;
+  color: black;
+}
+
+.compelling-stat {
+	border: 1px solid gray;
+	margin-left: 5%;
+	padding: 4%; 
+	height: 30%;
+	text-align: center;  
+
+}
+
+
+.credentials:hover { 
+  text-decoration: none;
+  color: gray;
+  font-style: bold, italic;
+
+}
+
+
+.credentials { 
+  font-style: italic;
+
+}
+
+
+</style>
+
+
+
+
+<div id="logo" class="row">
+	<a href="#"><img src="vifant-logo.png" style="max-height: 100%"></a>
+</div>
+
+<!-- NAVBAR -->
+
+<nav class = "navbar navbar-default" style="background-color: white">
+
+<!-- Brand and toggle get grouped for better mobile display -->
+   	<div class="navbar-header " >
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+<div data-spy="affix" data-offset-top="265">
+
+       <div class="collapse navbar-collapse bs-example-js-navbar-collapse" style="width:100%; position: relative; text-align: center">
+          <ul class="nav navbar-nav" style="display: inline-block; float: none; margin-top: 3%">
+           
+              <li><a id="#background" href="#">Background</a> </li>
+              <li><a href="#ourapp">Our App</a></li>
+              <li><a href="#sci-stats">Science & Statistics</a></li>
+              <li><a href="#team"> Our Team </a></li>
+              <li><a href="#contact"> Contact Us </a></li>
+               
+           </ul>
+
+    
+        </div><!-- /.nav-collapse -->
+
+
+	<br>
+	 <hr >
+
+	
+    </div>
+</nav>
+</head>
+
+<body data-spy="scroll" data-target=".scrollspy">
+
+	<div class="container-fluid">
+  
+
+    <div id="background" class="section" href="#" style="box-sizing: border-box;">
+    	<h3> Background </h3>
+    	<div >
+
+    	Vifant is dedicated to delivering innovative, cost-effective, mobile solutions for the early identification of vision impairment in verbal, pre-verbal and non-verbal patients as young as 2 months of age.  Vifant is the brainchild of Dr. Monte Mills, director of pediatric ophthalmology at the renowned Children’s Hospital of Philadelphia (CHOP).
+
+    	
+    	<!--	<div class="all-stats row">
+    			<div class="compelling-stat col-xs-3"> This is a made-up statistic. </div>
+
+    		<div class="compelling-stat col-xs-3"> This is another one. </div>
+    		<div class="compelling-stat col-xs-3"> Aaaand here is a last one. </div>
+    	</div>-->
+   </div>
+   
+    
+    <div id="ourapp" class="section">
+     	<h3> Our App</h3>
+		<div >
+			Vifant is a <span> mobile application</span> for health care practitioners </br>
+			It uses <a href="#"> <span> OKN technologies </span></a> to tell whether a patient's eyes can follow a moving target. 
+    	  </div>
+
+
+    <div> Vifant vision acuity test is an app that objectively measures vision acuity in patients as young as 2 months of age without requiring verbal communication between the tester and the patient.
+That app is downloaded to an iPad and that test takes 4 minutes to be administered. 
+Vifant vision acuity test leverages the established OKN principle: the eye natural response to moving targets.
+Vifant vision acuity test is the only solution in the market that informs on vision improvement over time allowing for more informed treatment decisions. 
+
+</div>
+     </div>
+    
+    <div id="sci-stats" class="section">
+              	<h3> Science & Statistics</h3>
+              	<div >
+    	There is consensus among healthcare providers that the earlier a vision problem is diagnosed and treated, the less the potential negative impact on the child’s development, delayed reading and poor overall school performance.
+Early vision development is critical for infants and toddlers: 90% of early learning is related to visual input.  <br> 
+Criticality of earlier vision impairment detection takes an even more dramatic turn when you consider amblyopia (lazy eye).  Amblyopia is the leading cause of visual impairment and visual loss in children.  About 15%-20% of children are at risk for amblyopia.  Amblyopia treatment efficacy declines after age 5 and irreversible neurologic damage occurs if treatment is delayed after age 8. 
+The economic burden of visual disabilities related to amblyopia is estimated at $23 billion per year when income and quality of life are considered.
+
+ </div>
+              </div>
+    
+    <div id="#ourteam" class="section"> 
+              	<h3> Our Team </h3> 
+
+	<div class="team-member-name">
+    	<b> Monte D. Mills, MD </b> <span class="member-role"> Founder </span></div> 
+    	<!-- TODO: perhaps shorten this?? -->
+      Dr. Mills is the Director of Ophthalmology and Mabel E. Leslie Endowed Chair of Pediatric Ophthalmology at The Children's Hospital of Philadelphia. He is also Clinical Professor of Ophthalmology at the Scheie Eye Institute and the University Of Pennsylvania Department Of Ophthalmology.</br>
+      Dr. Mills received his medical degree in 1988 from the Baylor College of Medicine, with high honor. After completing a residency in ophthalmology at the Massachusetts Eye and Ear Infirmary and Harvard Medical School, he was trained in the Fellowship in Pediatric Ophthalmology and Strabismus at the Children's Hospital of Boston. Dr. Mills was a member of the faculty of the University of Wisconsin and director of Pediatric Ophthalmology at the University of Wisconsin Hospital and Clinics in Madison, WI, prior to joining The Children's Hospital of Philadelphia in 2000. </br>
+      Dr. Mills has published articles and book chapters on topics involving pediatric eye and vision disorders, strabismus and eye surgery. He has presented clinical research on many topics in pediatric ophthalmology and strabismus at national and international meetings, and served as associate editor of the Journal of the Association for Pediatric Ophthalmology and Strabismus, the major clinical journal in his field, from 1994-2000. Currently, his clinical research interests include pediatric strabismus and strabismus surgery, retinopathy of prematurity, telemedicine, eye manifestations of pediatric disease, pediatric cataracts and pediatric glaucoma.
+
+      <span class="credentials"> Academic awards </span>
+
+      <div class="team-member-name">
+      <b> Beth DeSouza </b> <span class="member-role"> CEO </span> </div>
+      Beth DeSouza joined Vifant in December 2014.  Beth is an experienced executive in the life sciences industry with roles of increasing responsibility at Johnson & Johnson, GSK and Pfizer where she led teams in finance and strategic and in-line marketing. </br>
+She is also a board member of the Mid Atlantic Diamond Ventures (MADV) which assists early-stage technology and innovation-based companies acquire funding and build sustainable businesses.  Beth earned her MBA at The Wharton School (Director’s List) and has a BS in Civil Engineering from the Rio de Janeiro Federal University.
+ </br>
+      <a class="credentials"> Academic awards</a>
+              </div>
+
+
+
+
+    	<div class="team-member-name">
+    	<b> Karina Sotnik </b> <span class="member-role"> Board </span> </div>
+    	Karina is a serial entrepreneur, mentor, adviser and an educator.  She spent over a decade in Silicon Valley in senior positions helping companies grow globally. She also launched three ventures of her own. In the last five years her concentration has been on growing WorldUpStart, a consulting practice focused on providing mentorship, consulting and advice to academic incubators, including PCI Ventures at University of Pennsylvania, Accelerace Life (Scandinavia) and ITMO QD (Russia).  In addition, Karina recently conceived and launched AppITUP, an accelerator program for Mobile Apps at the University of Pennsylvania with concentration on digital Health.</br>
+Karina's qualifications include an engineering degree and close to two decades in international program management and business development for the technology, telecom, retail, social media and mobile health.
+ </br>
+      <a class="credentials"> Academic awards</a>
+              </div>
+</div> <!-- end container -->
+
+</div>
+ <div id = "footer" class="container-fluid">
+ 	<h3> Contact Us </h3>
+ 	<div id="contact" class="section">
+ 	
+
+ 		<h5> contactus@vifant.com <h5>
+ 			<br>
+ 		Towne Building <br>
+ 		233 South 33rd Street <br>
+ 		Philadelphia, PA 19104 <br>
+ 		(215) 555-5555 <br>
+
+
+ 		<div id="copyright">
+ 			(c) 2015 Vifant    |    In collaboration with <a href="kandatechnologies.com"> Kanda Technologies, Inc </a></div>
+
+
+ </div>
+
+<script>
+$('#nav').affix({
+    offset: {
+        
+    }
+});
+
+window.scroll() {
+	$('#nav').affix({
+  offset: {
+  	top: 0, /*$('#nav').offset().top*/
+    bottom: ($('footer').outerHeight(true) + 
+            $('.application').outerHeight(true)) + 
+            50
+  }
+});
+
+/*$('body').scrollspy({ target: '#navbar-header' })*/
+
+
+</script>
+</body>
+
+
+</html>
